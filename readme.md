@@ -1,4 +1,9 @@
 # This starter is usefull when we need to create headless server with the help of Node.js ,MongoDB(mongodb-driver)
+
+download repo or clone it 
+1. cmd :npm install 
+2. cmd : node server.js  > to run server 
+
 ##  MongoDb with mongodb driver 
 ### MongoDB driver : https://docs.mongodb.com/manual/reference/operator/ 
 
