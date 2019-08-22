@@ -6,23 +6,22 @@ download repo or clone it
 
 ##  MongoDb with mongodb driver 
 ### MongoDB driver : https://docs.mongodb.com/manual/reference/operator/ 
+#### this project is based on mongodb driver so we need to install : cmd : npm install mongodb@2.2.33 --save
 
-    const { MongoClient } = require('mongodb');
-
-    const url = 'mongodb://localhost:27017/test';
-# Demo : Sample Formate of Examples
+  
+# Demo server.js : Sample Formate of Examples
  
 const { MongoClient } = require('mongodb');
  
 const url = 'mongodb://localhost:27017/test';
  
 MongoClient.connect(url,(err,db)=>{
-   //database is connected or not
+
    if(err){
        console.log('could not connected.');
    }
    console.log('connection successfully');
-  //add one collection using insertOne Method
+
    db.collection('Cars').insertOne({
        model : 'Ford',
        year : 2019
